@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 260" role="img" aria-labelledby="title desc">
+  <title id="title">Profile Lab pinned project card</title>
+  <desc id="desc">A custom card linking to the zhoujungis profile repository.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0F172A"/><stop offset="1" stop-color="#164E63"/></linearGradient>
+    <linearGradient id="accent" x1="0" x2="1"><stop stop-color="#22D3EE"/><stop offset="1" stop-color="#F59E0B"/></linearGradient>
+  </defs>
+  <rect width="860" height="260" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="858" height="258" rx="19" fill="none" stroke="#334155"/>
+  <circle cx="760" cy="58" r="104" fill="#22D3EE" opacity=".08"/>
+  <circle cx="802" cy="20" r="45" fill="#F59E0B" opacity=".12"/>
+  <rect x="34" y="34" width="46" height="46" rx="14" fill="url(#accent)"/>
+  <path d="M48 57h18M57 48v18" stroke="#0F172A" stroke-width="4" stroke-linecap="round"/>
+  <text x="34" y="125" fill="#67E8F9" font-family="ui-monospace,monospace" font-size="13" font-weight="700" letter-spacing="3">01 / PROFILE LAB</text>
+  <text x="34" y="160" fill="#F8FAFC" font-family="ui-sans-serif,system-ui,sans-serif" font-size="28" font-weight="800">zhoujungis / zhoujungis</text>
+  <text x="34" y="190" fill="#CBD5E1" font-family="ui-sans-serif,system-ui,sans-serif" font-size="15">A living README for ideas, experiments, and the work behind them.</text>
+  <rect x="34" y="216" width="145" height="26" rx="13" fill="#0B1220" stroke="#0E7490"/>
+  <text x="52" y="234" fill="#67E8F9" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12" font-weight="700">OPEN PROJECT ↗</text>
+</svg>
