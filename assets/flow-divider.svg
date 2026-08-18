@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 92" role="img" aria-labelledby="title desc">
+  <title id="title">Flow divider</title>
+  <desc id="desc">A decorative flowing line between profile sections.</desc>
+  <defs><linearGradient id="flow" x1="0" x2="1"><stop stop-color="#22D3EE"/><stop offset=".35" stop-color="#A78BFA"/><stop offset=".7" stop-color="#FB7185"/><stop offset="1" stop-color="#F59E0B"/></linearGradient></defs>
+  <path d="M0 56C150 8 170 84 310 43S482 25 590 56S770 91 888 44S1020 16 1140 52" fill="none" stroke="#102B3A" stroke-width="11" stroke-linecap="round"/>
+  <path d="M0 56C150 8 170 84 310 43S482 25 590 56S770 91 888 44S1020 16 1140 52" fill="none" stroke="url(#flow)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M0 72C150 24 170 100 310 59S482 41 590 72S770 107 888 60S1020 32 1140 68" fill="none" stroke="#22D3EE" stroke-opacity=".18" stroke-width="1" stroke-linecap="round"/>
+</svg>

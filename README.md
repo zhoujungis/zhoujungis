@@ -1,112 +1,130 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,45:0E7490,100:F59E0B&height=220&section=header&text=ZHOUJUNGIS&fontSize=58&fontColor=F8FAFC&fontAlignY=38&desc=Build%20with%20curiosity%20%E2%80%A2%20Ship%20with%20care&descAlignY=62&descSize=17" width="100%" alt="zhoujungis profile header" />
-
-<h1>Hi, I'm zhoujungis 👋</h1>
-
-<p>
-  <strong>Developer · Builder · Lifelong learner</strong><br />
-  把想法做成产品，把复杂问题变成简单体验。
-</p>
+<img src="assets/hero-banner.svg" width="100%" alt="zhoujungis profile banner" />
+<img src="assets/flow-divider.svg" width="100%" alt="Decorative flow divider" />
 
 <p>
-  <a href="https://github.com/zhoujungis?tab=followers"><img src="https://img.shields.io/github/followers/zhoujungis?label=Followers&style=for-the-badge&logo=github&logoColor=white&color=0E7490" alt="GitHub followers" /></a>
-  <a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/github/stars/zhoujungis?affiliations=OWNER&style=for-the-badge&logo=github&logoColor=white&color=F59E0B" alt="GitHub stars" /></a>
-  <img src="https://komarev.com/ghpvc/?username=zhoujungis&style=for-the-badge&color=334155" alt="Profile views" />
+  <strong>THE WORKSPACE OF ZHOUJUNGIS</strong><br />
+  把模糊的想法，慢慢打磨成值得使用的东西。
 </p>
 
-</div>
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2800&pause=900&color=0E7490&center=true&vCenter=true&width=700&lines=Turning+ideas+into+shippable+software;Learning+in+public%2C+one+commit+at+a+time;Make+it+useful.+Make+it+beautiful.+Make+it+last." alt="Typing introduction" />
+<a href="https://github.com/zhoujungis?tab=followers"><img src="https://img.shields.io/github/followers/zhoujungis?label=FOLLOWERS&style=for-the-badge&logo=github&logoColor=white&color=0E7490" alt="GitHub followers" /></a>
+<a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/github/stars/zhoujungis?affiliations=OWNER&style=for-the-badge&logo=github&logoColor=white&color=F59E0B" alt="GitHub stars" /></a>
+<img src="https://komarev.com/ghpvc/?username=zhoujungis&style=for-the-badge&color=334155" alt="Profile views" />
 
 </div>
 
-## 🧭 About me
+## 00 / The short version
 
-```text
-▸ I enjoy turning vague ideas into clear, useful interfaces.
-▸ I care about readable code, thoughtful details, and steady iteration.
-▸ I am always learning something new and sharing what I discover.
-```
+<table>
+  <tr>
+    <td width="42%" valign="top">
+      <h3>Make it useful.</h3>
+      <p>I like interfaces that feel calm, tools that remove friction, and code that stays readable after the excitement wears off.</p>
+      <p><strong>Developer · Builder · Lifelong learner</strong></p>
+    </td>
+    <td width="58%" valign="top">
+      <pre>
+  curiosity  →  craft  →  ship
+       ↑                   ↓
+       └────── learn ──────┘
+      </pre>
+      <p>每一次提交，都是下一次迭代的起点。</p>
+    </td>
+  </tr>
+</table>
 
-## ⚡ What I'm up to
-
-| Focus | Current direction |
-| :--- | :--- |
-| 🛠️ Build | Small tools, experiments, and products with a real purpose |
-| 📚 Learn | Better architecture, smoother UX, and reliable delivery |
-| 🤝 Share | Open-source notes, reusable components, and practical lessons |
-
-## 🧰 Toolbox
+## 01 / Current orbit
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nodejs,python,git,github,vscode&perline=10" alt="Technology icons" />
+<img src="assets/activity-ribbon.svg" width="100%" alt="Build learn share activity signal" />
 
 </div>
 
-## 📊 GitHub at a glance
+<p align="center">
+  <code>BUILD SMALL</code>&nbsp;&nbsp; <code>LEARN SHARP</code>&nbsp;&nbsp; <code>SHARE OFTEN</code>
+</p>
+
+## 02 / The toolbox
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=zhoujungis&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github&bg_color=0F172A&title_color=F59E0B&icon_color=22D3EE&text_color=CBD5E1" alt="GitHub statistics" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zhoujungis&layout=compact&hide_border=true&langs_count=8&bg_color=0F172A&title_color=F59E0B&text_color=CBD5E1" alt="Top languages" />
+<img src="assets/toolbox.svg" width="100%" alt="Technology toolbox" />
+
+</div>
+
+## 03 / A glance at the signal
+
+<div align="center">
+
+<img src="assets/github-glance.svg" width="100%" alt="GitHub metrics dashboard" />
+
+</div>
+
+## 04 / Doorways
+
+<p>不把仓库伪装成作品集，也不把作品集写成流水账。这里有两扇门，进去看看就好。</p>
+
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/zhoujungis/zhoujungis"><img src="assets/pinned-profile.svg" width="760" alt="Open profile lab" /></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/zhoujungis?tab=repositories"><img src="assets/pinned-shelf.svg" width="760" alt="Browse all repositories" /></a></td>
+  </tr>
+</table>
+
+</div>
+
+## 05 / Live elsewhere
+
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center"><a href="https://zhoujungis.github.io/"><img src="https://img.shields.io/badge/PROFILE%20SITE-0E7490?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Profile site" /></a><br /><sub>zhoujungis.github.io</sub></td>
+    <td align="center"><a href="https://happy-games.pages.dev/"><img src="https://img.shields.io/badge/HAPPY%20GAMES-F59E0B?style=for-the-badge&logo=gamemaker&logoColor=111827" alt="Happy Games" /></a><br /><sub>happy-games.pages.dev</sub></td>
+    <td align="center"><a href="https://halo-music.pages.dev/"><img src="https://img.shields.io/badge/HALO%20MUSIC-8B5CF6?style=for-the-badge&logo=musicbrainz&logoColor=white" alt="Halo Music" /></a><br /><sub>halo-music.pages.dev</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://routewise-ai.pages.dev/"><img src="https://img.shields.io/badge/ROUTEWISE%20AI-06B6D4?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Routewise AI" /></a><br /><sub>routewise-ai.pages.dev</sub></td>
+    <td align="center"><a href="https://destiny-ai.pages.dev/"><img src="https://img.shields.io/badge/DESTINY%20AI-F43F5E?style=for-the-badge&logo=probot&logoColor=white" alt="Destiny AI" /></a><br /><sub>destiny-ai.pages.dev</sub></td>
+    <td align="center"><a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/MORE%20EXPERIMENTS-334155?style=for-the-badge&logo=github&logoColor=white" alt="More experiments" /></a><br /><sub>github.com/zhoujungis</sub></td>
+  </tr>
+</table>
+
+</div>
+
+## 06 / Tiny wins, arranged with intent
+
+<div align="center">
+
+<img src="assets/trophy-shelf.svg" width="100%" alt="Custom milestone shelf" />
+
+</div>
+
+## 07 / Keep in touch
+
+<div align="center">
+
+<a href="https://github.com/zhoujungis"><img src="https://img.shields.io/badge/GITHUB-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+<a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-0E7490?style=for-the-badge&logo=github&logoColor=white" alt="Projects" /></a>
+<a href="https://github.com/zhoujungis?tab=stars"><img src="https://img.shields.io/badge/STARRED%20IDEAS-F59E0B?style=for-the-badge&logo=github&logoColor=111827" alt="Starred ideas" /></a>
 
 <br />
-
-<img src="https://streak-stats.demolab.com?user=zhoujungis&hide_border=true&background=0F172A&ring=F59E0B&fire=F97316&currStreakLabel=22D3EE&sideLabels=CBD5E1&dates=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC" alt="GitHub contribution streak" />
-
-</div>
-
-## 🌟 Pinned / selected work
-
-<div align="center">
-
-<a href="https://github.com/zhoujungis/zhoujungis"><img src="./assets/pinned-profile.svg" width="49%" alt="Open profile lab" /></a>
-<a href="https://github.com/zhoujungis?tab=repositories"><img src="./assets/pinned-shelf.svg" width="49%" alt="Browse all repositories" /></a>
-
-</div>
-
-<p align="center"><sub>These cards are intentionally hand-designed for the profile. Add your strongest repositories to GitHub's actual pinned list so they appear beside this showcase.</sub></p>
-
-## 🏆 Little trophy shelf
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=zhoujungis&theme=algolia&no-frame=true&no-bg=true&margin-w=12&column=7" alt="GitHub profile trophies" />
-
-</div>
-
-## 📫 Let's connect
-
-<div align="center">
-
-<a href="https://github.com/zhoujungis"><img src="https://img.shields.io/badge/GitHub-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-<a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/Projects-0E7490?style=for-the-badge&logo=github&logoColor=white" alt="Projects" /></a>
-<a href="https://github.com/zhoujungis?tab=stars"><img src="https://img.shields.io/badge/Starred%20ideas-F59E0B?style=for-the-badge&logo=github&logoColor=111827" alt="Starred ideas" /></a>
-
-<br />
-
 <sub>Open to thoughtful conversations, interesting problems, and meaningful collaborations.</sub>
 
 </div>
 
-## 🟩 Contribution calendar
+## 08 / Contribution rhythm
 
 <div align="center">
 
-<a href="./scripts/generate-contribution-calendar.mjs"><img src="./assets/contribution-calendar.svg" width="100%" alt="Custom contribution calendar" /></a>
+<a href="scripts/generate-contribution-calendar.mjs"><img src="assets/contribution-calendar.svg" width="100%" alt="Custom contribution calendar" /></a>
 
-<sub>Hand-drawn SVG · refreshed weekly by <a href="./.github/workflows/update-contribution-calendar.yml">GitHub Actions</a></sub>
-
-</div>
-
-<br />
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F59E0B,55:0E7490,100:0F172A&height=110&section=footer" width="100%" alt="Profile footer" />
+<sub>Hand-drawn SVG · refreshed weekly by <a href=".github/workflows/update-contribution-calendar.yml">GitHub Actions</a></sub>
 
 </div>

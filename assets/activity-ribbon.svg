@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 150" role="img" aria-labelledby="title desc">
+  <title id="title">Activity signal ribbon</title>
+  <desc id="desc">A decorative activity line showing a build, learn, share rhythm.</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#0B1220"/><stop offset=".5" stop-color="#102A35"/><stop offset="1" stop-color="#221725"/></linearGradient><linearGradient id="line" x1="0" x2="1"><stop stop-color="#22D3EE"/><stop offset=".45" stop-color="#A78BFA"/><stop offset="1" stop-color="#F59E0B"/></linearGradient></defs>
+  <rect width="1140" height="150" rx="22" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1138" height="148" rx="21" fill="none" stroke="#293E50"/>
+  <text x="34" y="42" fill="#67E8F9" font-family="ui-monospace,monospace" font-size="11" font-weight="700" letter-spacing="3">ACTIVITY SIGNAL</text>
+  <text x="34" y="72" fill="#F8FAFC" font-family="ui-sans-serif,system-ui,sans-serif" font-size="21" font-weight="800">Keep the loop open</text>
+  <text x="34" y="98" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="12">Build something small. Learn something sharp. Share something useful.</text>
+  <path d="M560 106C622 38 665 138 724 88S820 82 866 108S944 142 1001 76S1065 40 1110 104" fill="none" stroke="#0E7490" stroke-width="12" stroke-linecap="round" opacity=".24"/>
+  <path d="M560 106C622 38 665 138 724 88S820 82 866 108S944 142 1001 76S1065 40 1110 104" fill="none" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M560 119C622 51 665 151 724 101S820 95 866 121S944 155 1001 89S1065 53 1110 117" fill="none" stroke="#A78BFA" stroke-opacity=".35" stroke-width="1" stroke-linecap="round"/>
+  <circle cx="724" cy="88" r="4" fill="#22D3EE"/><circle cx="866" cy="108" r="4" fill="#A78BFA"/><circle cx="1001" cy="76" r="4" fill="#FB7185"/>
+</svg>

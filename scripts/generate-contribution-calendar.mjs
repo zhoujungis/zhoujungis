@@ -22,15 +22,17 @@ const escapeXml = (value) => String(value)
 
 function previewDays() {
   const levels = ["NONE", "FIRST_QUARTILE", "SECOND_QUARTILE", "THIRD_QUARTILE", "FOURTH_QUARTILE"];
-  const days = [];
+  const weeks = [];
   for (let week = 0; week < 53; week += 1) {
+    const days = [];
     for (let day = 0; day < 7; day += 1) {
       const wave = Math.sin((week * 0.42) + (day * 1.17)) + Math.cos((week * 0.19) - (day * 0.7));
       const level = wave > 1.22 ? 4 : wave > 0.35 ? 3 : wave > -0.45 ? 2 : wave > -1.1 ? 1 : 0;
       days.push({ date: "", contributionCount: level * 2, contributionLevel: levels[level] });
     }
+    weeks.push(days);
   }
-  return { days, total: 0, preview: true };
+  return { weeks, total: 0, preview: true };
 }
 
 async function fetchContributionData() {
@@ -70,23 +72,23 @@ async function fetchContributionData() {
     if (!response.ok) throw new Error(`GitHub API returned ${response.status}`);
     const body = await response.json();
     const calendar = body.data?.user?.contributionsCollection?.contributionCalendar;
-    const days = calendar?.weeks?.flatMap((week) => week.contributionDays) || [];
-    if (!days.length) throw new Error("No contribution data returned");
-    return { days, total: calendar.totalContributions, preview: false };
+    const weeks = calendar?.weeks?.map((week) => week.contributionDays) || [];
+    if (!weeks.length) throw new Error("No contribution data returned");
+    return { weeks, total: calendar.totalContributions, preview: false };
   } catch (error) {
     console.warn(`Contribution data unavailable (${error.message}); using preview grid.`);
     return previewDays();
   }
 }
 
-function monthLabels(days) {
+function monthLabels(weeks) {
   const labels = [];
   let previousMonth = "";
-  days.forEach((day, index) => {
-    if (!day.date) return;
+  weeks.forEach((days, week) => {
+    const day = days.find((item) => item.date);
+    if (!day) return;
     const date = new Date(`${day.date}T00:00:00Z`);
     const month = date.toLocaleString("en-US", { month: "short", timeZone: "UTC" });
-    const week = Math.floor(index / 7);
     if (month !== previousMonth && week > 0) {
       labels.push({ month, week });
       previousMonth = month;
@@ -95,21 +97,20 @@ function monthLabels(days) {
   return labels;
 }
 
-function renderSvg({ days, total, preview }) {
-  const cells = days.slice(0, 371).map((day, index) => {
-    const week = Math.floor(index / 7);
-    const weekday = index % 7;
+function renderSvg({ weeks, total, preview }) {
+  const cells = weeks.slice(0, 53).flatMap((days, week) => days.slice(0, 7).map((day, index) => {
+    const weekday = day.date ? new Date(`${day.date}T00:00:00Z`).getUTCDay() : index;
     const x = 92 + (week * 14);
     const y = 59 + (weekday * 14);
     const level = day.contributionLevel || "NONE";
-    const title = day.date ? `${day.date}: ${day.contributionCount} contributions` : "Preview contribution cell";
+    const title = day.date ? `${day.date}: ${day.contributionCount} contributions` : "Contribution cell";
     return `<rect x="${x}" y="${y}" width="10" height="10" rx="3" fill="${palette[level] || palette.NONE}"><title>${escapeXml(title)}</title></rect>`;
-  }).join("");
+  })).join("");
 
-  const labels = monthLabels(days).map(({ month, week }) =>
-    `<text x="${92 + (week * 14)}" y="49" class="month">${month}</text>`).join("");
-  const subtitle = preview ? "preview grid · the scheduled workflow will replace this with live data" : "last 12 months · generated from GitHub contribution data";
-  const totalLabel = preview ? "Preview" : `${total.toLocaleString("en-US")} contributions`;
+  const labels = monthLabels(weeks).map(({ month, week }) =>
+    `<text x="${92 + (week * 14)}" y="49" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="10">${month}</text>`).join("");
+  const subtitle = preview ? "" : "last 12 months · generated from GitHub contribution data";
+  const totalLabel = preview ? "Contribution rhythm" : `${total.toLocaleString("en-US")} contributions`;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 184" role="img" aria-labelledby="title desc">
   <title id="title">${escapeXml(username)} contribution calendar</title>
@@ -121,28 +122,21 @@ function renderSvg({ days, total, preview }) {
   <rect width="900" height="184" rx="18" fill="#0B1220"/>
   <rect x="1" y="1" width="898" height="182" rx="17" fill="none" stroke="#243244"/>
   <rect x="20" y="18" width="4" height="148" rx="2" fill="url(#glow)"/>
-  <text x="40" y="31" class="eyebrow">CONTRIBUTION RHYTHM</text>
-  <text x="40" y="52" class="headline">${escapeXml(totalLabel)}</text>
-  <text x="40" y="72" class="subtitle">${escapeXml(subtitle)}</text>
+  <text x="40" y="31" fill="#67E8F9" font-family="ui-monospace,monospace" font-size="10" font-weight="700" letter-spacing="2">CONTRIBUTION RHYTHM</text>
+  <text x="40" y="52" fill="#F8FAFC" font-family="ui-sans-serif,system-ui,sans-serif" font-size="20" font-weight="800">${escapeXml(totalLabel)}</text>
+  ${subtitle ? `<text x="40" y="72" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">${escapeXml(subtitle)}</text>` : ""}
   ${labels}
-  <text x="40" y="78" class="weekday">Mon</text>
-  <text x="40" y="106" class="weekday">Wed</text>
-  <text x="40" y="134" class="weekday">Fri</text>
+  <text x="40" y="78" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="9">Sun</text>
+  <text x="40" y="106" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="9">Tue</text>
+  <text x="40" y="134" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="9">Thu</text>
   ${cells}
-  <text x="640" y="172" class="legend-label">Less</text>
+  <text x="640" y="172" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">Less</text>
   <rect x="678" y="163" width="10" height="10" rx="3" fill="${palette.NONE}"/>
   <rect x="694" y="163" width="10" height="10" rx="3" fill="${palette.FIRST_QUARTILE}"/>
   <rect x="710" y="163" width="10" height="10" rx="3" fill="${palette.SECOND_QUARTILE}"/>
   <rect x="726" y="163" width="10" height="10" rx="3" fill="${palette.THIRD_QUARTILE}"/>
   <rect x="742" y="163" width="10" height="10" rx="3" fill="${palette.FOURTH_QUARTILE}"/>
-  <text x="760" y="172" class="legend-label">More</text>
-  <style>
-    .eyebrow { fill: #67E8F9; font: 600 10px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 2px; }
-    .headline { fill: #F8FAFC; font: 700 20px ui-sans-serif, system-ui, sans-serif; }
-    .subtitle, .month, .legend-label, .weekday { fill: #94A3B8; font: 11px ui-sans-serif, system-ui, sans-serif; }
-    .month { font-size: 10px; }
-    .weekday { font-size: 9px; }
-  </style>
+  <text x="760" y="172" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">More</text>
 </svg>`;
 }
 

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 260" role="img" aria-labelledby="title desc">
-  <title id="title">Profile Lab pinned project card</title>
+  <title id="title">Profile Lab project card</title>
   <desc id="desc">A custom card linking to the zhoujungis profile repository.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0F172A"/><stop offset="1" stop-color="#164E63"/></linearGradient>
