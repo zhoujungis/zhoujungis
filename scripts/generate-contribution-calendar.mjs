@@ -6,11 +6,11 @@ const output = process.env.CONTRIBUTION_CALENDAR_OUTPUT || "assets/contribution-
 const token = process.env.GITHUB_TOKEN;
 
 const palette = {
-  NONE: "#1E293B",
-  FIRST_QUARTILE: "#164E63",
-  SECOND_QUARTILE: "#0E7490",
-  THIRD_QUARTILE: "#06B6D4",
-  FOURTH_QUARTILE: "#F59E0B",
+  NONE: "#263136",
+  FIRST_QUARTILE: "#315A58",
+  SECOND_QUARTILE: "#4C9F8C",
+  THIRD_QUARTILE: "#7CC7E8",
+  FOURTH_QUARTILE: "#F6CA75",
 };
 
 const escapeXml = (value) => String(value)
@@ -101,42 +101,41 @@ function renderSvg({ weeks, total, preview }) {
   const cells = weeks.slice(0, 53).flatMap((days, week) => days.slice(0, 7).map((day, index) => {
     const weekday = day.date ? new Date(`${day.date}T00:00:00Z`).getUTCDay() : index;
     const x = 92 + (week * 14);
-    const y = 59 + (weekday * 14);
+    const y = 84 + (weekday * 14);
     const level = day.contributionLevel || "NONE";
     const title = day.date ? `${day.date}: ${day.contributionCount} contributions` : "Contribution cell";
     return `<rect x="${x}" y="${y}" width="10" height="10" rx="3" fill="${palette[level] || palette.NONE}"><title>${escapeXml(title)}</title></rect>`;
   })).join("");
 
   const labels = monthLabels(weeks).map(({ month, week }) =>
-    `<text x="${92 + (week * 14)}" y="49" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="10">${month}</text>`).join("");
-  const subtitle = preview ? "" : "last 12 months · generated from GitHub contribution data";
+    `<text x="${92 + (week * 14)}" y="73" fill="#8FA1A5" font-family="ui-sans-serif,system-ui,sans-serif" font-size="10">${month}</text>`).join("");
+  const subtitle = preview ? "Preview grid - refreshed weekly" : "Last 12 months - generated from GitHub contribution data";
   const totalLabel = preview ? "Contribution rhythm" : `${total.toLocaleString("en-US")} contributions`;
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 184" role="img" aria-labelledby="title desc">
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 214" role="img" aria-labelledby="title desc">
   <title id="title">${escapeXml(username)} contribution calendar</title>
   <desc id="desc">${escapeXml(totalLabel)} across the last 12 months.</desc>
   <defs>
-    <linearGradient id="glow" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0E7490"/><stop offset="1" stop-color="#F59E0B"/></linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#020617" flood-opacity=".45"/></filter>
+    <linearGradient id="glow" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#4C9F8C"/><stop offset="1" stop-color="#F6CA75"/></linearGradient>
   </defs>
-  <rect width="900" height="184" rx="18" fill="#0B1220"/>
-  <rect x="1" y="1" width="898" height="182" rx="17" fill="none" stroke="#243244"/>
-  <rect x="20" y="18" width="4" height="148" rx="2" fill="url(#glow)"/>
-  <text x="40" y="31" fill="#67E8F9" font-family="ui-monospace,monospace" font-size="10" font-weight="700" letter-spacing="2">CONTRIBUTION RHYTHM</text>
-  <text x="40" y="52" fill="#F8FAFC" font-family="ui-sans-serif,system-ui,sans-serif" font-size="20" font-weight="800">${escapeXml(totalLabel)}</text>
-  ${subtitle ? `<text x="40" y="72" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">${escapeXml(subtitle)}</text>` : ""}
+  <rect width="900" height="214" rx="18" fill="#151E22"/>
+  <rect x="1" y="1" width="898" height="212" rx="17" fill="none" stroke="#3B4B50"/>
+  <rect x="20" y="18" width="4" height="178" rx="2" fill="url(#glow)"/>
+  <text x="40" y="32" fill="#89E3C1" font-family="ui-monospace,monospace" font-size="10" font-weight="700" letter-spacing="2">CONTRIBUTION RHYTHM</text>
+  <text x="40" y="54" fill="#F7F4EC" font-family="ui-sans-serif,system-ui,sans-serif" font-size="20" font-weight="800">${escapeXml(totalLabel)}</text>
+  ${subtitle ? `<text x="40" y="72" fill="#9AAAB0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">${escapeXml(subtitle)}</text>` : ""}
   ${labels}
-  <text x="40" y="78" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="9">Sun</text>
-  <text x="40" y="106" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="9">Tue</text>
-  <text x="40" y="134" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="9">Thu</text>
+  <text x="40" y="100" fill="#8FA1A5" font-family="ui-sans-serif,system-ui,sans-serif" font-size="9">Sun</text>
+  <text x="40" y="128" fill="#8FA1A5" font-family="ui-sans-serif,system-ui,sans-serif" font-size="9">Tue</text>
+  <text x="40" y="156" fill="#8FA1A5" font-family="ui-sans-serif,system-ui,sans-serif" font-size="9">Thu</text>
   ${cells}
-  <text x="640" y="172" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">Less</text>
-  <rect x="678" y="163" width="10" height="10" rx="3" fill="${palette.NONE}"/>
-  <rect x="694" y="163" width="10" height="10" rx="3" fill="${palette.FIRST_QUARTILE}"/>
-  <rect x="710" y="163" width="10" height="10" rx="3" fill="${palette.SECOND_QUARTILE}"/>
-  <rect x="726" y="163" width="10" height="10" rx="3" fill="${palette.THIRD_QUARTILE}"/>
-  <rect x="742" y="163" width="10" height="10" rx="3" fill="${palette.FOURTH_QUARTILE}"/>
-  <text x="760" y="172" fill="#94A3B8" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">More</text>
+  <text x="640" y="202" fill="#8FA1A5" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">Less</text>
+  <rect x="678" y="193" width="10" height="10" rx="3" fill="${palette.NONE}"/>
+  <rect x="694" y="193" width="10" height="10" rx="3" fill="${palette.FIRST_QUARTILE}"/>
+  <rect x="710" y="193" width="10" height="10" rx="3" fill="${palette.SECOND_QUARTILE}"/>
+  <rect x="726" y="193" width="10" height="10" rx="3" fill="${palette.THIRD_QUARTILE}"/>
+  <rect x="742" y="193" width="10" height="10" rx="3" fill="${palette.FOURTH_QUARTILE}"/>
+  <text x="760" y="202" fill="#8FA1A5" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">More</text>
 </svg>`;
 }
 

@@ -1,130 +1,118 @@
 <div align="center">
+<sub>FIELD NOTES / 2026 &nbsp;·&nbsp; ZJ // 001</sub>
+<h1>ZHOUJUNGIS</h1>
+<p><strong>把想法，做成东西。</strong></p>
+<sub>DEVELOPER &nbsp;/&nbsp; BUILDER &nbsp;/&nbsp; LIFELONG LEARNER</sub>
+<p>
+  <img src="https://img.shields.io/badge/BUILDING_IN_PUBLIC-4C9F8C?style=flat-square" alt="Building in public" />
+  <img src="https://img.shields.io/badge/MOOD-CURIOUS-B27756?style=flat-square" alt="Mood curious" />
+  <img src="https://img.shields.io/badge/OUTPUT-USEFUL-596A72?style=flat-square" alt="Output useful" />
+</p>
+</div>
 
-<img src="assets/hero-banner.svg" width="100%" alt="zhoujungis profile banner" />
-<img src="assets/flow-divider.svg" width="100%" alt="Decorative flow divider" />
+<div align="center"><img src="assets/typing-console.svg" width="100%" alt="Animated typing console with workflow notes" /></div>
+
+<table>
+  <tr>
+    <td width="33%" align="center" valign="top"><sub>01 / START</sub><br /><br /><strong>先做出来</strong><br /><small>让想法先拥有一个可以打开的形状。</small></td>
+    <td width="34%" align="center" valign="top"><sub>02 / TUNE</sub><br /><br /><strong>再磨好用</strong><br /><small>让真实的使用决定下一次修改。</small></td>
+    <td width="33%" align="center" valign="top"><sub>03 / SHARE</sub><br /><br /><strong>最后留下</strong><br /><small>让作品继续被看见、被使用、被改进。</small></td>
+  </tr>
+</table>
+
+<h2>01 / Workshop notes</h2>
 
 <p>
-  <strong>THE WORKSPACE OF ZHOUJUNGIS</strong><br />
-  把模糊的想法，慢慢打磨成值得使用的东西。
+  <img src="https://img.shields.io/badge/MODE-MAKING-FF8066?style=flat-square" alt="Mode making" />
+  <img src="https://img.shields.io/badge/INPUT-CURIOSITY-F6CA75?style=flat-square&labelColor=211F1D" alt="Input curiosity" />
+  <img src="https://img.shields.io/badge/OUTPUT-USEFUL-4C9F8C?style=flat-square" alt="Output useful" />
 </p>
-
-<a href="https://github.com/zhoujungis?tab=followers"><img src="https://img.shields.io/github/followers/zhoujungis?label=FOLLOWERS&style=for-the-badge&logo=github&logoColor=white&color=0E7490" alt="GitHub followers" /></a>
-<a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/github/stars/zhoujungis?affiliations=OWNER&style=for-the-badge&logo=github&logoColor=white&color=F59E0B" alt="GitHub stars" /></a>
-<img src="https://komarev.com/ghpvc/?username=zhoujungis&style=for-the-badge&color=334155" alt="Profile views" />
-
-</div>
-
-## 00 / The short version
 
 <table>
   <tr>
-    <td width="42%" valign="top">
-      <h3>Make it useful.</h3>
-      <p>I like interfaces that feel calm, tools that remove friction, and code that stays readable after the excitement wears off.</p>
-      <p><strong>Developer · Builder · Lifelong learner</strong></p>
+    <td width="32%" align="center" valign="middle">
+      <sub>WORK MODE / 01</sub>
+      <h2>BUILD<br />SMALL</h2>
+      <p><code>MAKE</code> <code>LEARN</code> <code>SHARE</code></p>
+      <p><sub>curiosity in<br />friction out</sub></p>
     </td>
-    <td width="58%" valign="top">
-      <pre>
-  curiosity  →  craft  →  ship
-       ↑                   ↓
-       └────── learn ──────┘
-      </pre>
-      <p>每一次提交，都是下一次迭代的起点。</p>
+    <td width="68%" valign="top">
+      <sub>01 / TOOLS I REACH FOR</sub>
+      <h3>从浏览器开始，不从框架开始。</h3>
+      <p>我喜欢先把一个想法放进真实的页面里，再决定它需要什么技术。能被打开、能被操作、能收到反馈，才算真正开始。</p>
+      <p><code>HTML</code> <code>CSS</code> <code>JavaScript</code> <code>TypeScript</code><br />
+      <code>React</code> <code>Node.js</code> <code>Python</code> <code>Git</code></p>
+      <p><sub>STACK / interface · interaction · systems</sub></p>
+      <hr />
+      <sub>02 / RULES OF THE DESK</sub>
+      <h3>先让它能用，再让它值得留下。</h3>
+      <p>把复杂的东西讲清楚，把有趣的东西做出来，也给下一次改进留一点空间。每次迭代只解决真正影响体验的那一个摩擦点。</p>
+      <p><code>quiet UI</code> <code>clear edges</code> <code>fast feedback</code> <code>small steps</code> <code>real users</code> <code>open notes</code></p>
+      <p><sub>FILTER / clarity · feedback · iteration</sub></p>
     </td>
   </tr>
 </table>
 
-## 01 / Current orbit
+<p align="center"><sub>IDEA &nbsp;&rarr;&nbsp; PROTOTYPE &nbsp;&rarr;&nbsp; FRICTION &nbsp;&rarr;&nbsp; REFINEMENT</sub></p>
 
-<div align="center">
+<h2>02 / Live builds</h2>
 
-<img src="assets/activity-ribbon.svg" width="100%" alt="Build learn share activity signal" />
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://happy-games.pages.dev/">01 / Happy Games</a></h3>
+      <p><a href="https://happy-games.pages.dev/"><img src="https://img.shields.io/badge/OPEN_LIVE-FF8066?style=flat-square&logo=googlechrome&logoColor=white" alt="Open Happy Games live demo" /></a> <a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/GITHUB_SOURCE-29363A?style=flat-square&logo=github&logoColor=white" alt="Open GitHub source list" /></a></p>
+      <p><strong>把“打开就玩”当作第一条产品原则。</strong></p>
+      <p>这个站点把注意力放在游戏本身，而不是复杂的入口和说明上。它更像一个持续收集中的网页游戏实验室：每一次点击都应该尽快得到反馈，每一个小玩法都可以独立成立。对我来说，它练习的是交互节奏、状态反馈和“让用户马上开始”的取舍。</p>
+      <p><sub>体验关键词：轻量、即时、可重复游玩。<br />入口：<a href="https://happy-games.pages.dev/">happy-games.pages.dev</a></sub></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://halo-music.pages.dev/">02 / Halo Music</a></h3>
+      <p><a href="https://halo-music.pages.dev/"><img src="https://img.shields.io/badge/OPEN_LIVE-8B78B3?style=flat-square&logo=googlechrome&logoColor=white" alt="Open Halo Music live demo" /></a> <a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/GITHUB_SOURCE-29363A?style=flat-square&logo=github&logoColor=white" alt="Open GitHub source list" /></a></p>
+      <p><strong>让音乐成为界面里的主角。</strong></p>
+      <p>这个项目围绕“发现并听下去”来组织页面，不把音乐压缩成一排冷冰冰的文件名。视觉、播放控制和内容浏览需要互相让路：用户可以快速找到想听的内容，也可以顺着氛围继续探索。它更关注听觉内容如何决定页面节奏，以及播放器如何保持存在感但不打断体验。</p>
+      <p><sub>体验关键词：沉浸、连续、内容优先。<br />入口：<a href="https://halo-music.pages.dev/">halo-music.pages.dev</a></sub></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://routewise-ai.pages.dev/">03 / Routewise AI</a></h3>
+      <p><a href="https://routewise-ai.pages.dev/"><img src="https://img.shields.io/badge/OPEN_LIVE-4B86AB?style=flat-square&logo=googlechrome&logoColor=white" alt="Open Routewise AI live demo" /></a> <a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/GITHUB_SOURCE-29363A?style=flat-square&logo=github&logoColor=white" alt="Open GitHub source list" /></a></p>
+      <p><strong>把一堆出行信息整理成下一步行动。</strong></p>
+      <p>路线规划真正麻烦的地方，通常不是找不到地点，而是不知道怎样把目的地、时间和个人偏好组合成一条愿意执行的路线。这个项目尝试把 AI 放在“整理和取舍”的位置：先理解用户想怎么走，再把建议变成更清晰的安排。它练习的是输入如何变成上下文、建议如何保持可解释，以及自动化和人的判断如何共同完成决策。</p>
+      <p><sub>体验关键词：降低规划摩擦、建议可执行、保留人的选择。<br />入口：<a href="https://routewise-ai.pages.dev/">routewise-ai.pages.dev</a></sub></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://block-world-3d.pages.dev/">04 / Block World 3D</a></h3>
+      <p><a href="https://block-world-3d.pages.dev/"><img src="https://img.shields.io/badge/OPEN_LIVE-B7E36B?style=flat-square&logo=googlechrome&logoColor=172127" alt="Open Block World 3D live demo" /></a> <a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/GITHUB_SOURCE-29363A?style=flat-square&logo=github&logoColor=white" alt="Open GitHub source list" /></a></p>
+      <p><strong>把技术变成可以亲手进入的空间。</strong></p>
+      <p>这是一个在浏览器里打开的 3D 方块世界。它不急着把所有功能解释清楚，而是先让人移动、观察、靠近和发现：空间关系本身就是反馈，视角变化本身就是交互。这个项目把注意力放在实时渲染、相机控制和空间感上，也是在尝试回答一个很简单的问题：网页除了展示内容，能不能直接变成一个可探索的地方？</p>
+      <p><sub>体验关键词：空间感、即时交互、可探索。<br />入口：<a href="https://block-world-3d.pages.dev/">block-world-3d.pages.dev</a></sub></p>
+    </td>
+  </tr>
+</table>
 
-</div>
+<h2>03 / Public signal</h2>
+
+<p>
+  <a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fzhoujungis&label=PUBLIC%20REPOS&query=%24.public_repos&color=4C9F8C&style=flat-square" alt="Dynamic public repository count" /></a>
+  <a href="https://github.com/zhoujungis?tab=followers"><img src="https://img.shields.io/github/followers/zhoujungis?label=FOLLOWERS&style=flat-square&color=F6CA75&labelColor=211F1D" alt="Followers" /></a>
+  <a href="https://github.com/zhoujungis?tab=stars"><img src="https://img.shields.io/github/stars/zhoujungis?affiliations=OWNER&label=TOTAL+STARS&style=flat-square&color=FF7A66&labelColor=231F23" alt="Total stars" /></a>
+  <img src="https://img.shields.io/badge/TOP_LANGUAGE-JavaScript-7CC7E8?style=flat-square&labelColor=20202A" alt="Top language JavaScript" />
+</p>
 
 <p align="center">
-  <code>BUILD SMALL</code>&nbsp;&nbsp; <code>LEARN SHARP</code>&nbsp;&nbsp; <code>SHARE OFTEN</code>
+  <a href="https://zhoujungis.github.io/">profile site</a>&nbsp; · &nbsp;<a href="https://github.com/zhoujungis/zhoujungis">profile lab</a>&nbsp; · &nbsp;<a href="https://github.com/zhoujungis?tab=stars">starred ideas</a>
 </p>
 
-## 02 / The toolbox
+<h2>04 / Contribution rhythm</h2>
 
 <div align="center">
 
-<img src="assets/toolbox.svg" width="100%" alt="Technology toolbox" />
+<img src="assets/contribution-calendar.svg" width="100%" alt="Custom contribution calendar" />
+
+<sub>Updated weekly by <a href=".github/workflows/update-contribution-calendar.yml">GitHub Actions</a> · 数字会变化，节奏更重要。</sub>
 
 </div>
 
-## 03 / A glance at the signal
-
-<div align="center">
-
-<img src="assets/github-glance.svg" width="100%" alt="GitHub metrics dashboard" />
-
-</div>
-
-## 04 / Doorways
-
-<p>不把仓库伪装成作品集，也不把作品集写成流水账。这里有两扇门，进去看看就好。</p>
-
-<div align="center">
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/zhoujungis/zhoujungis"><img src="assets/pinned-profile.svg" width="760" alt="Open profile lab" /></a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/zhoujungis?tab=repositories"><img src="assets/pinned-shelf.svg" width="760" alt="Browse all repositories" /></a></td>
-  </tr>
-</table>
-
-</div>
-
-## 05 / Live elsewhere
-
-<div align="center">
-
-<table>
-  <tr>
-    <td align="center"><a href="https://zhoujungis.github.io/"><img src="https://img.shields.io/badge/PROFILE%20SITE-0E7490?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Profile site" /></a><br /><sub>zhoujungis.github.io</sub></td>
-    <td align="center"><a href="https://happy-games.pages.dev/"><img src="https://img.shields.io/badge/HAPPY%20GAMES-F59E0B?style=for-the-badge&logo=gamemaker&logoColor=111827" alt="Happy Games" /></a><br /><sub>happy-games.pages.dev</sub></td>
-    <td align="center"><a href="https://halo-music.pages.dev/"><img src="https://img.shields.io/badge/HALO%20MUSIC-8B5CF6?style=for-the-badge&logo=musicbrainz&logoColor=white" alt="Halo Music" /></a><br /><sub>halo-music.pages.dev</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://routewise-ai.pages.dev/"><img src="https://img.shields.io/badge/ROUTEWISE%20AI-06B6D4?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Routewise AI" /></a><br /><sub>routewise-ai.pages.dev</sub></td>
-    <td align="center"><a href="https://destiny-ai.pages.dev/"><img src="https://img.shields.io/badge/DESTINY%20AI-F43F5E?style=for-the-badge&logo=probot&logoColor=white" alt="Destiny AI" /></a><br /><sub>destiny-ai.pages.dev</sub></td>
-    <td align="center"><a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/MORE%20EXPERIMENTS-334155?style=for-the-badge&logo=github&logoColor=white" alt="More experiments" /></a><br /><sub>github.com/zhoujungis</sub></td>
-  </tr>
-</table>
-
-</div>
-
-## 06 / Tiny wins, arranged with intent
-
-<div align="center">
-
-<img src="assets/trophy-shelf.svg" width="100%" alt="Custom milestone shelf" />
-
-</div>
-
-## 07 / Keep in touch
-
-<div align="center">
-
-<a href="https://github.com/zhoujungis"><img src="https://img.shields.io/badge/GITHUB-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-<a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/PROJECTS-0E7490?style=for-the-badge&logo=github&logoColor=white" alt="Projects" /></a>
-<a href="https://github.com/zhoujungis?tab=stars"><img src="https://img.shields.io/badge/STARRED%20IDEAS-F59E0B?style=for-the-badge&logo=github&logoColor=111827" alt="Starred ideas" /></a>
-
-<br />
-<sub>Open to thoughtful conversations, interesting problems, and meaningful collaborations.</sub>
-
-</div>
-
-## 08 / Contribution rhythm
-
-<div align="center">
-
-<a href="scripts/generate-contribution-calendar.mjs"><img src="assets/contribution-calendar.svg" width="100%" alt="Custom contribution calendar" /></a>
-
-<sub>Hand-drawn SVG · refreshed weekly by <a href=".github/workflows/update-contribution-calendar.yml">GitHub Actions</a></sub>
-
-</div>
+<p align="center"><sub>Open to thoughtful conversations, interesting problems, and meaningful collaborations.</sub></p>
