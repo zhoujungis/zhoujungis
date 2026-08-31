@@ -109,12 +109,11 @@ function renderSvg({ weeks, total, preview }) {
 
   const labels = monthLabels(weeks).map(({ month, week }) =>
     `<text x="${92 + (week * 14)}" y="73" fill="#8FA1A5" font-family="ui-sans-serif,system-ui,sans-serif" font-size="10">${month}</text>`).join("");
-  const subtitle = preview ? "Preview grid - refreshed weekly" : "Last 12 months - generated from GitHub contribution data";
   const totalLabel = preview ? "Contribution rhythm" : `${total.toLocaleString("en-US")} contributions`;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 214" role="img" aria-labelledby="title desc">
   <title id="title">${escapeXml(username)} contribution calendar</title>
-  <desc id="desc">${escapeXml(totalLabel)} across the last 12 months.</desc>
+  <desc id="desc">${escapeXml(totalLabel)}</desc>
   <defs>
     <linearGradient id="glow" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#4C9F8C"/><stop offset="1" stop-color="#F6CA75"/></linearGradient>
   </defs>
@@ -123,7 +122,6 @@ function renderSvg({ weeks, total, preview }) {
   <rect x="20" y="18" width="4" height="178" rx="2" fill="url(#glow)"/>
   <text x="40" y="32" fill="#89E3C1" font-family="ui-monospace,monospace" font-size="10" font-weight="700" letter-spacing="2">CONTRIBUTION RHYTHM</text>
   <text x="40" y="54" fill="#F7F4EC" font-family="ui-sans-serif,system-ui,sans-serif" font-size="20" font-weight="800">${escapeXml(totalLabel)}</text>
-  ${subtitle ? `<text x="40" y="72" fill="#9AAAB0" font-family="ui-sans-serif,system-ui,sans-serif" font-size="11">${escapeXml(subtitle)}</text>` : ""}
   ${labels}
   <text x="40" y="100" fill="#8FA1A5" font-family="ui-sans-serif,system-ui,sans-serif" font-size="9">Sun</text>
   <text x="40" y="128" fill="#8FA1A5" font-family="ui-sans-serif,system-ui,sans-serif" font-size="9">Tue</text>
