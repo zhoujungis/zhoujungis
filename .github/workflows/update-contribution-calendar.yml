@@ -1,8 +1,8 @@
-name: Update contribution calendar
+name: Update profile assets
 
 on:
   schedule:
-    - cron: "17 2 * * 1"
+    - cron: "17 2 * * *"
   workflow_dispatch:
 
 permissions:
@@ -20,16 +20,25 @@ jobs:
         with:
           node-version: 20
 
-      - name: Generate SVG from contribution data
+      - name: Generate contribution calendar SVG
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
         run: node scripts/generate-contribution-calendar.mjs
 
-      - name: Commit refreshed calendar
+      - name: Generate live stats JSON
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: node scripts/generate-stats.mjs
+
+      - name: Bump calendar cache buster
+        run: node -e "const fs=require('fs');const v=new Date().toISOString().slice(0,10);let s=fs.readFileSync('README.md','utf8');s=s.replace(/contribution-calendar\.svg\?v=[0-9A-Za-z-]+/,'contribution-calendar.svg?v='+v);fs.writeFileSync('README.md',s);console.log('cache buster set to '+v)"
+
+      - name: Commit refreshed assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/contribution-calendar.svg
-          git diff --cached --quiet || git commit -m "chore: refresh contribution calendar"
+          git add assets/contribution-calendar.svg assets/stats.json README.md
+          git diff --cached --quiet || git commit -m "chore: refresh contribution calendar and stats"
           git push

@@ -60,6 +60,7 @@
 <table>
   <tr>
     <td width="50%" valign="top">
+      <a href="https://happy-games.pages.dev/"><img src="assets/shots/happy-games.webp" width="100%" alt="Happy Games screenshot" /></a>
       <h3><a href="https://happy-games.pages.dev/">01 / Happy Games</a></h3>
       <p><a href="https://happy-games.pages.dev/"><img src="https://img.shields.io/badge/OPEN_LIVE-FF8066?style=flat-square&logo=googlechrome&logoColor=white" alt="Open Happy Games live demo" /></a> <a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/GITHUB_SOURCE-29363A?style=flat-square&logo=github&logoColor=white" alt="Open GitHub source list" /></a></p>
       <p><strong>把“打开就玩”当作第一条产品原则。</strong></p>
@@ -67,6 +68,7 @@
       <p><sub>体验关键词：轻量、即时、可重复游玩。<br />入口：<a href="https://happy-games.pages.dev/">happy-games.pages.dev</a></sub></p>
     </td>
     <td width="50%" valign="top">
+      <a href="https://halo-music.pages.dev/"><img src="assets/shots/halo-music.webp" width="100%" alt="Halo Music screenshot" /></a>
       <h3><a href="https://halo-music.pages.dev/">02 / Halo Music</a></h3>
       <p><a href="https://halo-music.pages.dev/"><img src="https://img.shields.io/badge/OPEN_LIVE-8B78B3?style=flat-square&logo=googlechrome&logoColor=white" alt="Open Halo Music live demo" /></a> <a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/GITHUB_SOURCE-29363A?style=flat-square&logo=github&logoColor=white" alt="Open GitHub source list" /></a></p>
       <p><strong>让音乐成为界面里的主角。</strong></p>
@@ -76,6 +78,7 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
+      <a href="https://routewise-ai.pages.dev/"><img src="assets/shots/routewise-ai.webp" width="100%" alt="Routewise AI screenshot" /></a>
       <h3><a href="https://routewise-ai.pages.dev/">03 / Routewise AI</a></h3>
       <p><a href="https://routewise-ai.pages.dev/"><img src="https://img.shields.io/badge/OPEN_LIVE-4B86AB?style=flat-square&logo=googlechrome&logoColor=white" alt="Open Routewise AI live demo" /></a> <a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/GITHUB_SOURCE-29363A?style=flat-square&logo=github&logoColor=white" alt="Open GitHub source list" /></a></p>
       <p><strong>把一堆出行信息整理成下一步行动。</strong></p>
@@ -83,6 +86,7 @@
       <p><sub>体验关键词：降低规划摩擦、建议可执行、保留人的选择。<br />入口：<a href="https://routewise-ai.pages.dev/">routewise-ai.pages.dev</a></sub></p>
     </td>
     <td width="50%" valign="top">
+      <a href="https://block-world-3d.pages.dev/"><img src="assets/shots/block-world-3d.webp" width="100%" alt="Block World 3D screenshot" /></a>
       <h3><a href="https://block-world-3d.pages.dev/">04 / Block World 3D</a></h3>
       <p><a href="https://block-world-3d.pages.dev/"><img src="https://img.shields.io/badge/OPEN_LIVE-B7E36B?style=flat-square&logo=googlechrome&logoColor=172127" alt="Open Block World 3D live demo" /></a> <a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/GITHUB_SOURCE-29363A?style=flat-square&logo=github&logoColor=white" alt="Open GitHub source list" /></a></p>
       <p><strong>把技术变成可以亲手进入的空间。</strong></p>
@@ -95,10 +99,12 @@
 <h2>03 / Public signal</h2>
 
 <p>
-  <a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fzhoujungis&label=PUBLIC%20REPOS&query=%24.public_repos&color=4C9F8C&style=flat-square" alt="Dynamic public repository count" /></a>
+  <a href="https://github.com/zhoujungis?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzhoujungis%2Fzhoujungis%2Fmain%2Fassets%2Fstats.json&query=%24.publicRepos&label=PUBLIC%20REPOS&color=4C9F8C&style=flat-square" alt="Dynamic public repository count" /></a>
   <a href="https://github.com/zhoujungis?tab=followers"><img src="https://img.shields.io/github/followers/zhoujungis?label=FOLLOWERS&style=flat-square&color=F6CA75&labelColor=211F1D" alt="Followers" /></a>
   <a href="https://github.com/zhoujungis?tab=stars"><img src="https://img.shields.io/github/stars/zhoujungis?affiliations=OWNER&label=TOTAL+STARS&style=flat-square&color=FF7A66&labelColor=231F23" alt="Total stars" /></a>
-  <img src="https://img.shields.io/badge/TOP_LANGUAGE-JavaScript-7CC7E8?style=flat-square&labelColor=20202A" alt="Top language JavaScript" />
+  <a href="https://github.com/zhoujungis"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzhoujungis%2Fzhoujungis%2Fmain%2Fassets%2Fstats.json&query=%24.topLanguageLabel&label=TOP%20LANGUAGE&color=7CC7E8&labelColor=20202A&style=flat-square" alt="Top language" /></a>
+  <a href="https://github.com/zhoujungis"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzhoujungis%2Fzhoujungis%2Fmain%2Fassets%2Fstats.json&query=%24.currentStreak&prefix=STREAK%20&suffix=%20DAYS&color=B27756&labelColor=20202A&style=flat-square" alt="Current contribution streak" /></a>
+  <a href="https://github.com/zhoujungis"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzhoujungis%2Fzhoujungis%2Fmain%2Fassets%2Fstats.json&query=%24.totalContributions&label=CONTRIBUTIONS%20%2F%20YR&color=4C9F8C&labelColor=20202A&style=flat-square" alt="Contributions in the last year" /></a>
 </p>
 
 <p align="center">
@@ -109,7 +115,7 @@
 
 <div align="center">
 
-<img src="assets/contribution-calendar.svg?v=7874c23" width="100%" alt="Custom contribution calendar" />
+<img src="assets/contribution-calendar.svg?v=2026-09-07" width="100%" alt="Custom contribution calendar" />
 
 <sub>Updated weekly by <a href=".github/workflows/update-contribution-calendar.yml">GitHub Actions</a> · 数字会变化，节奏更重要。</sub>
 
