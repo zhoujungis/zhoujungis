@@ -115,7 +115,7 @@
 
 <div align="center">
 
-<img src="assets/contribution-calendar.svg?v=2026-09-12" width="100%" alt="Custom contribution calendar" />
+<img src="assets/contribution-calendar.svg?v=2026-09-13" width="100%" alt="Custom contribution calendar" />
 
 <sub>Updated weekly by <a href=".github/workflows/update-contribution-calendar.yml">GitHub Actions</a> · 数字会变化，节奏更重要。</sub>
 
